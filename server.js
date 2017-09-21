@@ -35,7 +35,8 @@ pelisApi.route('/peliculas')
 app.use('/api', pelisApi);
 
 app.get('/', function(req, res){
-    res.render('home');
+    //res.render('home');
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(9000, function(){
